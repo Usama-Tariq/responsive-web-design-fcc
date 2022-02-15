@@ -4,7 +4,163 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/home/usama/fcc/survey-form/styles.css" />
+    <title>Medical Records Keeping Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="title">
+      <h1 id="title">Medical Records Keeping Survey Form</h1>
+      <p id="description">
+        A survey to check the need of medical history for a person.
+      </p>
+    </div>
+
+    <form action="submit" id="survey-form">
+      <div id="" class="form-group">
+        <label for="name" id="name-label" class="form-label">Name </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your Name "
+          required
+          class="form-control"
+        />
+      </div>
+
+      <div id="" class="form-group">
+        <label for="email" id="email-label" class="form-label">Email </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <div id="" class="form-group">
+        <label for="number" id="number-label" class="form-label">Age </label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Age"
+          required
+          min="18"
+          max="99"
+          class="form-control"
+        />
+      </div>
+
+      <div id="" class="form-group">
+        <p id="dropdown-p" class="form-label">
+          Do you ever have had any medical history?
+        </p>
+        <select name="patient-history" id="dropdown" class="form-control">
+          <option selected disabled value>Select Option</option>
+          <option value="never">never</option>
+          <option value="long-time-ago">long-time-ago</option>
+          <option value="recent-times">recent-times</option>
+          <option value="facing-some-issues">facing-some-issues</option>
+          <option value="facing-mild-issues">facing-mild-issues</option>
+          <option value="facing-sever-issues">facing-sever-issues</option>
+        </select>
+      </div>
+
+      <div id="" class="form-group">
+        <p id="radios-p" class="form-label">Gender</p>
+        <label for="male" id="radio-label" class="form-label radio-label">
+          <input type="radio" name="gender" value="male" class="form-radio" />
+          male
+        </label>
+
+        <label for="female" id="radio-label" class="form-label radio-label">
+          <input type="radio" name="gender" value="female" class="form-radio" />
+          female
+        </label>
+
+        <label
+          for="prefer-not-to-disclose"
+          id="radio-label"
+          class="form-label radio-label"
+        >
+          <input
+            type="radio"
+            name="gender"
+            value="prefer-not-to-disclose"
+            class="form-radio"
+            checked
+          />
+          prefer-not-to-disclose
+        </label>
+      </div>
+
+      <div id="" class="form-group">
+        <p id="checkbox-p" class="form-label">
+          Would you like to use such service for? (Check all that apply)
+        </p>
+        <label for="ownself" class="form-label">
+          <input
+            type="checkbox"
+            name="p"
+            value="ownself"
+            class="form-checkbox"
+            checked
+          />
+          ownself
+        </label>
+
+        <label for="parents" class="form-label">
+          <input
+            type="checkbox"
+            name="p"
+            value="parents"
+            class="form-checkbox"
+          />
+          parents
+        </label>
+
+        <label for="better-half" class="form-label">
+          <input
+            type="checkbox"
+            name="p"
+            value="better-half"
+            class="form-checkbox"
+          />
+          better-half
+        </label>
+
+        <label for="childern" class="form-label">
+          <input
+            type="checkbox"
+            name="p"
+            value="childern"
+            class="form-checkbox"
+          />
+          childern
+        </label>
+
+        <label for="none" class="form-label">
+          <input type="checkbox" name="p" value="none" class="form-checkbox" />
+          none
+        </label>
+      </div>
+
+      <div id="" class="form-group">
+        <p class="form-label">Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="form-control form-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+
+      <div id="" class="form-group">
+        <button type="submit" id="submit" class="btn">Submit</button>
+      </div>
+    </form>
+  </body>
 </html>

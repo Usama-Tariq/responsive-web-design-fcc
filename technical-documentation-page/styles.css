@@ -1,0 +1,132 @@
+#navbar {
+  position: fixed;
+  min-width: 275px;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-color: darkblue;
+  border-right: solid;
+}
+
+#navbar header {
+  text-align: center;
+  margin: 10px;
+  color: black;
+  font-size: 1.8em;
+}
+
+#navbar ul {
+  height: 89%;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+#navbar li {
+  color: black;
+  list-style: none;
+  border-top: 1px solid;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+}
+
+#main-doc {
+  margin-left: 320px;
+  /* position: absolute; */
+  padding: 20px;
+  /* margin-bottom: 100px; */
+}
+
+.main-section {
+  display: block;
+  margin: 25px 0px;
+}
+
+.main-section header {
+  text-align: left;
+  margin: 10px 0px;
+  color: black;
+  font-size: 1.8em;
+}
+
+.main-section article {
+  color: black;
+  margin: 20px 15px;
+  font-size: 1.15em;
+}
+
+.main-section li {
+  margin: 10px 0px 10px 15px;
+}
+
+.code {
+  display: block;
+  text-align: left;
+  /* white-space: pre-line; */
+  /* position: relative; */
+  /* word-break: normal; */
+  line-height: 2.25;
+  background-color: whitesmoke;
+  margin: 15px 10px;
+  padding: 15px 10px;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: sticky;
+    z-index: 1;
+    border-color: darkblue;
+    border-bottom: solid;
+    border-right: none;
+    background-color: white;
+  }
+
+  #navbar ul {
+    height: 70%;
+    border: 1px solid;
+  }
+
+  #main-doc {
+    margin: 0px;
+    /* top: 180px; */
+    position: relative;
+    padding: 10px 20px;
+  }
+
+  .main-section li {
+    margin: 10px 0px 10px 5px;
+  }
+
+  .code {
+    overflow-x: auto;
+    margin: 15px 5px;
+    padding: 15px 5px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    padding: 10px 10px;
+  }
+
+  .main-section article {
+    margin: 20px 10px;
+  }
+
+  .main-section ul {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,102 @@
+body {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: gainsboro;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: grey;
+  width: 50%;
+  padding: 2em 0 2em 0;
+  border-radius: 1rem;
+}
+
+#title {
+  font-size: 2rem;
+}
+
+#description {
+  font-size: 1.2rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+  background: gainsboro;
+  padding: 10px 5px 10px 5px;
+  width: 99%;
+}
+
+.form-group {
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  margin-bottom: 3px;
+}
+
+.form-control {
+  width: 100%;
+  line-height: 1.5rem;
+  background-color: whitesmoke;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.form-radio,
+.form-checkbox {
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.radio-label {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.form-textarea {
+  margin-right: 0.625rem;
+  min-height: 5.5rem;
+  min-width: 1.25rem;
+}
+
+.btn {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.6em;
+  border-radius: 0.5rem;
+  color: whitesmoke;
+  background-color: midnightblue;
+}
+
+@media (max-width: 1440px) {
+  form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    width: 90%;
+  }
+}

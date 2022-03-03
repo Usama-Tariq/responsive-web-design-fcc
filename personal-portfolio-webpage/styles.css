@@ -1,0 +1,177 @@
+body {
+  margin: 0px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: mintcream;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+  z-index: 10;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 1.5em 2em;
+}
+
+#navbar li {
+  list-style: none;
+  margin: 0.25em 1.95em;
+  display: block;
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: crimson;
+}
+
+main {
+  margin-top: 86px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: midnightblue;
+  color: crimson;
+}
+
+.greet {
+  margin: 0px;
+}
+
+.name {
+  margin: 5px 0px 0px 0px;
+}
+
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5em 0em;
+  flex-direction: column;
+}
+
+.projects-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-tile {
+  margin: 1em 0.5em;
+  padding: 1.5em 1em;
+  width: 100%;
+  background-color: mistyrose;
+}
+
+.project-tile a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: crimson;
+  font-size: 1.5em;
+}
+
+.project-tile img {
+  width: 15em;
+  height: 9em;
+  margin-bottom: 20px;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 0em;
+  background-color: midnightblue;
+  height: 30vh;
+  color: whitesmoke;
+}
+
+#contact a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0.3em;
+}
+
+#contact span {
+  color: transparent;
+}
+
+@media only screen and (max-width: 1220px) {
+  #navbar {
+    position: sticky;
+  }
+
+  #navbar ul {
+    justify-content: center;
+    padding: 0px;
+  }
+
+  main {
+    margin-top: 0px;
+  }
+
+  .project-tile img {
+    width: 12em;
+    height: 7em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    justify-content: center;
+    position: sticky;
+  }
+
+  #navbar ul {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  main {
+    margin-top: 0px;
+  }
+
+  .projects-wrap {
+    flex-direction: column;
+  }
+
+  .project-tile img {
+    width: 18em;
+    height: 8em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .project-tile {
+    margin: 1em 0em;
+    padding: 1em 0.4em;
+  }
+  .project-tile img {
+    width: 12em;
+    height: 8em;
+  }
+}

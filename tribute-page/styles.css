@@ -1,0 +1,71 @@
+body {
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+}
+
+ul {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 60%;
+}
+
+li {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+hr {
+  width: 25%;
+}
+
+blockquote {
+  width: 50%;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.quote {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  background: gainsboro;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+#title {
+  font-size: 2rem;
+}
+
+#tribute-info {
+  background: gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.img-div {
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px auto;
+}
+
+#image {
+  width: 100%;
+  display: block;
+  height: auto;
+  margin: 20px auto;
+}
